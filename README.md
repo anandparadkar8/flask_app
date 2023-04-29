@@ -11,12 +11,6 @@ Both environment consists of autoscaling group, ec2 instances placed in private 
 App can be accessed using load balancer DNS name
 
 Workflow written for pushing docker image to ECR when new code is pushed to repository.
+ 
+Each time new code is pushed to repository code pipeline runs and and AWS code deploy chnages the application in staging as well as in production.
 
-Workflow for deploying app on staging and prod has to be written which creates infrastructure and updates infra if new code is pused to repository and it  should reflect on app deployed on server. 
-
-Each time new code is pushed to repository user data of launch template changes and instance created by auto scaling group gets refreshed 
-
-
-TO-DO
-User data of launch template has to be updated according to the sha of git commit.
-Workflow for deploying app on staging and prod will gets complete by tommorow afternoon.
